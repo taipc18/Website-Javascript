@@ -823,7 +823,7 @@ ul li.activeSlide .slide__list_3 h1{
     margin-top: 450px;
     left: 50%;
     transform: translateX(-50px);
-    z-index: -1;
+    z-index: 1;
 }
 .rs__slide ul li {
     display: inline-block;
@@ -892,8 +892,8 @@ ul li.activeSlide .slide__list_3 h1{
     background-position: center right;
     background-repeat: no-repeat;
     border-radius: 16px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 4%;
+    padding-right: 4%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -937,8 +937,8 @@ ul li.activeSlide .slide__list_3 h1{
     background-position: center right;
     background-repeat: no-repeat;
     border-radius: 16px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 4%;
+    padding-right: 4%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -952,7 +952,7 @@ ul li.activeSlide .slide__list_3 h1{
     letter-spacing: 0px;
 }
 .wrap-left h1{
-    font-size: 36px;
+    font-size: 40px;
     letter-spacing: -1px;
     line-height: 43px;
 }
@@ -976,11 +976,8 @@ ul li.activeSlide .slide__list_3 h1{
 
 /* PRODUCT */
 .container-pr{
-    width: 100%;
-    height: 100%;
     background: #F7F7F7;
     margin-top: 100px;
-    /* transition: 1s ease-in; */
 }
 .wapper-pr{
     max-width: 1200px;
@@ -1004,6 +1001,13 @@ ul li.activeSlide .slide__list_3 h1{
     width: 300px;
     height: 300px;
 }
+
+.product-3_img .pr-img{
+    width: 210px;
+    height: 210px;
+    
+}
+
 .product-3_img span{
     background: var(--blue);
     color: white;
@@ -1018,7 +1022,9 @@ ul li.activeSlide .slide__list_3 h1{
     position: relative;
     display: inline-block;
 }
-.dropdown-product{
+.dropdown-product,
+.dropdown-product_2
+{
     display: none;
     position: absolute;
     top: 0;
@@ -1029,24 +1035,42 @@ ul li.activeSlide .slide__list_3 h1{
     font-size: 20px;
     cursor: pointer;
 }
+.dropdown-product_2 i:hover,
 .dropdown-product i:hover{
     color: #2A27E9;
 }
+.prduct-3_list:hover .dropdown-product_2,
 .prduct-3_list:hover .dropdown-product{
     display: block;
 }
+
+.dropdown-product_2 i{
+    background-color: #ffffff;
+    padding: 10px 10px;
+    margin: 3px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
 .product-3{
     margin-top: 30px;
 }
 .prduct-3_list{
     background: #FFFFFF;
     border-radius: 16px;
-    margin: 0 10px;
+    margin: 10px 10px;
     padding: 30px;
 }
 .product-3 ul {
     display: grid;
     grid-template-columns:  repeat(auto-fit,minmax(300px,1fr));
+    gap:0.5rem;
+}
+.product-3 .product-container{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(250px,1fr));
     gap:0.5rem;
 }
 
@@ -1077,11 +1101,210 @@ ul li.activeSlide .slide__list_3 h1{
     margin: 0 10px;
     text-decoration: line-through;
 }
+.banner__container{
+    background: #F7F7F7;
+    margin-top: 100px;
+}
+.banner-wapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #522876;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 16px;
+}
 
+.banner-img{
+    width: 500px;
+    height: 500px; 
+    margin: 20px 90px 0px 0px;
+}
+.banner-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: contain;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+.baaner__title{
+    width: 500px;
+    height: 500px;
+    color: white;
+    text-align: center;
+}
+.baaner__title h1{
+    font-size: 50px;
+    line-height: 80px;
+    margin-top: 10px;
+}
+.baaner__title .bephone{
+    color: #95afc0;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.time .day{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255,0.2);
+    margin: 10px;
+    padding: 25px 10px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.name__be-banner,.pice__banner{
+    font-size: 22px;
+    line-height: 50px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.banner-btn{
+    width: 150px;
+    padding: 15px 35px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #48dbfb;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin-left: 180px;
+    margin-top: 40px;
+}
 /* END PRODUCT */
 
-
-
+/* BANNER 2 */
+.banner_2{
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    background: #F2F2F0;
+    object-fit: cover;
+    background-image: url(../images/banner2.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.banner_2_wapper{
+    max-width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(300px,1fr));
+    gap:0.5rem;
+    align-items: center;
+}
+#banner_2_pr{
+    display: flex;
+}
+.banner_2_pr{
+    width: 300px;
+}
+.banner_2_title span{
+    font-size: 44px;
+    font-weight: 700;
+}
+.banner_2_title p{
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 300;
+}
+/* END BANNER 2 */
+/* DEW SHOP */
+.dew_shop{
+    width: 100%;
+    height: 620px;
+    text-align: center;
+    background: #FFFFFF ;
+}
+.shop__wapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 150px;
+    
+}
+.shop__item .shop__left .shop__img,
+.shop__item .shop__right .shop__img{
+    width: 300px;
+    height: 220px;
+}
+.shop__item .shop__left .shop__img img,
+.shop__item .shop__right .shop__img img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 100%;
+}
+.shop__wapper p {
+    font-size: 22px;
+}
+.shop__wapper h1{
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 80px;
+    color: #0B1A48;
+}
+.shop__wapper h1 span{
+    color: var(--blue);
+}
+.shop__item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.shop__left .shop__title p,
+.shop__right .shop__title p
+{
+    font-size: 16px;
+}
+.shop__left,
+.shop__right
+{
+    display: flex;
+    align-items: center;
+    background: #E7E7E7;
+    padding: 30px;
+    border-radius: 16px;
+    margin: 15px ;
+    text-align: left;
+}
+.shop__left .shop__title h3,
+.shop__right .shop__title h3
+{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #0B1A48;
+}
+.shop__left .shop__title p,
+.shop__right .shop__title p
+{
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.shop__left .shop__title span,
+.shop__right .shop__title span{
+    font-weight: 300;
+    line-height: 24px;
+}
+/* END DEW SHOP */
 
 
 
