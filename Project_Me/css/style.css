@@ -1670,17 +1670,13 @@ ul .fr__item li a.active{
     ul li.activeSlide .slide__img_2 img{
         width: 300px;
         height: 300px;
-        /* position: absolute; */
     }
     .slide__contaner{
         margin-top: 150px;
     }
-    .slide__group ul li #slide2,
-    .slide__group ul li #slide {
-        height: 400px;
-    }
+    
     .rs__slide{
-        margin-top: 360px;
+        margin-top: 450px;
         transform: translateX(-60px);
     }.rs__slide ul li{
         width: 15px;
@@ -1722,6 +1718,7 @@ ul .fr__item li a.active{
     .slide__list_3{
         padding: 0 20px;
     }
+}
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
     /* Menu 2 */
@@ -1781,7 +1778,6 @@ ul .fr__item li a.active{
     .wcp{
         padding: 0 30px;
     }
-    
     .slide__group ul li #slide{
         align-items: right;
         justify-content: right;
@@ -1813,9 +1809,6 @@ ul .fr__item li a.active{
         text-align: end;
         transform: translate(150px,-74px);
     }
-    
-
-
     /* CONTENT */
     .wapper{
         width: 100%;
